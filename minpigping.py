@@ -12,6 +12,11 @@ def Olá_Mundo():
 def ping():
     return"<h1>você foi pingado</h1>"
 
+@app.route("/pong")
+def pong():
+    return"<h1>Vish deu pong!</h1>"
+
+
 @app.route("/<name>")
 def diga_olá(name):
     return f"<h1>Olá sou {name}!</h1>"
